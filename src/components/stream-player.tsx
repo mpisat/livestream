@@ -13,7 +13,7 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 
-import Link from "next/link";
+//import Link from "next/link";
 import { Icons } from "./ui/icons";
 
 function toString(connectionState: string) {
