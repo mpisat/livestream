@@ -64,7 +64,15 @@ export async function createIngress(
 
   if (ingressType === IngressInput.WHIP_INPUT) {
     // https://docs.livekit.io/egress-ingress/ingress/overview/#bypass-transcoding-for-whip-sessions
-    options.bypassTranscoding = true;
+    options.bypassTranscoding = false;
+    options.video = {
+      source: TrackSource.CAMERA,
+      preset: IngressVideoEncodingPreset.H264_1080P_30FPS_3_LAYERS,
+    };
+    options.audio = {
+      source: TrackSource.MICROPHONE,
+      preset: IngressAudioEncodingPreset.OPUS_STEREO_96KBPS,
+    };
   } else {
     options.video = {
       source: TrackSource.CAMERA,
