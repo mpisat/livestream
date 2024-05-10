@@ -20,7 +20,7 @@ export default function SetupPage({ searchParams: { channel } }: PageProps) {
       <div className="w-full border-t" />
       <div className="max-w-[728px]">
         <h1 className="text-xl font-medium mb-4">
-          Streaming with OBS + LiveKit Ingress
+          Streaming with OBS with RTMP or WHIP
         </h1>
         <p>
           After setting up your ingress endpoint, you should receive two values:
