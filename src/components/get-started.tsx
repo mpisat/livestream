@@ -55,7 +55,7 @@ export default function HomeForm() {
             className="flex items-center gap-2"
           >
             <Icons.uploadCloud className="h-4 w-4" />
-            Broadcast via LKC Ingress
+            Broadcast via OBS
           </DropdownMenuItem>
           <DropdownMenuItem
             onClick={() => router.push(`/channel/${slug}/host`)}
