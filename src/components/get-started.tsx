@@ -15,7 +15,7 @@ import { Input } from "./ui/input";
 
 const slugSchema = z
   .string()
-  .regex(/^([a-z][a-z0-9]*)(-[a-z0-9]+)*$/)
+  .regex(/^([A-Za-z][A-Za-z0-9]*)(-[A-Za-z0-9]+)*$/)
   .min(3);
 
 export default function HomeForm() {
